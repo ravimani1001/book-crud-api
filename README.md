@@ -110,7 +110,7 @@ You can test the endpoints using:
 - **Postman Desktop** (recommended)
 - Or Frontend Client
 
-> Import the provided Postman collection: `bookstore-api.postman_collection.json`
+> Import the provided Postman collection: `BookstoreAPI.postman_collection.json`
 
 ---
 
@@ -132,8 +132,6 @@ You can test the endpoints using:
 - Add pagination support
 - Add author schema with reference
 - Implement authentication for CRUD routes
-- Add genre/tag filtering
-- Deploy to Render/Railway
 
 ---
 

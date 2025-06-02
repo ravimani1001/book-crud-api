@@ -13,7 +13,7 @@ This API allows you to:
 The Bookstore API is deployed and accessible at:
 
 **Base URL:**  
-`https://book-crud-api-production.up.railway.app/api/books`
+[https://book-crud-api-production.up.railway.app/api/books](https://book-crud-api-production.up.railway.app/api/books)
 
 Use this base URL to test the following endpoints:
 
@@ -76,42 +76,7 @@ bookstore-api/
 └── README.md
 ```
 
----
 
-## 🛠️ Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/bookstore-api.git
-cd bookstore-api
-```
-
-### 2. Install Dependencies
-
-```bash
-npm install
-```
-
-### 3. Set Up Environment Variables
-
-Create a `.env` file in the root folder:
-
-```env
-PORT=3000
-MONGODB_URI=your_mongodb_connection_string
-```
-
-Example MongoDB URI (replace `<username>` and `<password>`):
-```
-mongodb+srv://<username>:<password>@cluster.mongodb.net/bookstore?retryWrites=true&w=majority
-```
-
-### 4. Start the Server
-
-```bash
-npm start
-```
 
 ---
 

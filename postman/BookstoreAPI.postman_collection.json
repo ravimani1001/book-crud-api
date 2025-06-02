@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "d749243a-c60e-4a67-86e6-54f1602a36c1",
+		"name": "BookstoreAPI",
+		"description": "Deployed API URL -\n\n[https://book-crud-api-production.up.railway.app/api/books](https://book-crud-api-production.up.railway.app/api/books)\n\nThis Postman collection contains all the API requests to test the Bookstore REST API, which supports:\n\n- **GET /api/books** — Retrieve all books\n    \n- **POST /api/books** — Add a new book\n    \n- **PUT /api/books/:id** — Update an existing book\n    \n- **DELETE /api/books/:id** — Delete a book by ID",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37304514",
+		"_collection_link": "https://justme-6811.postman.co/workspace/e4a6a401-1c7d-4d9d-90f9-d915a0567b59/collection/37304514-d749243a-c60e-4a67-86e6-54f1602a36c1?action=share&source=collection_link&creator=37304514"
+	},
+	"item": [
+		{
+			"name": "/api/books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"The Pragmatic Programmer\",\r\n  \"author\": \"Andrew Hunt and David Thomas\",\r\n  \"price\": 500,\r\n  \"publishedDate\": \"1999-10-30\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://book-crud-api-production.up.railway.app/api/books",
+					"protocol": "https",
+					"host": [
+						"book-crud-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				},
+				"description": "Adds a new book to the database. Requires `title`, `author`, `price`, and `publishedDate` in JSON body."
+			},
+			"response": []
+		},
+		{
+			"name": "/api/books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://book-crud-api-production.up.railway.app/api/books",
+					"protocol": "https",
+					"host": [
+						"book-crud-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				},
+				"description": "Retrieves a list of all books in the database."
+			},
+			"response": []
+		},
+		{
+			"name": "/api/books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://book-crud-api-production.up.railway.app/api/books?title=Harry",
+					"protocol": "https",
+					"host": [
+						"book-crud-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Harry"
+						}
+					]
+				},
+				"description": "Retrieves a list of all books in the database based on title(search) query parameter."
+			},
+			"response": []
+		},
+		{
+			"name": "/api/books/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price\": 900\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://book-crud-api-production.up.railway.app/api/books/683e1b490ae0e5ab06c0759d",
+					"protocol": "https",
+					"host": [
+						"book-crud-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"books",
+						"683e1b490ae0e5ab06c0759d"
+					]
+				},
+				"description": "Updates details of an existing book identified by its `id`. Send updated fields in JSON body."
+			},
+			"response": []
+		},
+		{
+			"name": "/api/books/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://book-crud-api-production.up.railway.app/api/books/683e1b490ae0e5ab06c0759d",
+					"protocol": "https",
+					"host": [
+						"book-crud-api-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"books",
+						"683e1b490ae0e5ab06c0759d"
+					]
+				},
+				"description": "Deletes the book with the specified `id` from the database."
+			},
+			"response": []
+		}
+	]
+}

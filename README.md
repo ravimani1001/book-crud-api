@@ -8,6 +8,30 @@ This API allows you to:
 
 ---
 
+## Live API Deployment
+
+The Bookstore API is deployed and accessible at:
+
+**Base URL:**  
+`https://book-crud-api-production.up.railway.app/api/books`
+
+Use this base URL to test the following endpoints:
+
+- `GET /api/books` — List all books  
+- `POST /api/books` — Add a new book  
+- `PUT /api/books/:id` — Update a book  
+- `DELETE /api/books/:id` — Delete a book  
+
+
+## Postman Collection
+
+You can download and import the Postman collection to easily test the API:
+
+[BookstoreAPI.postman_collection.json](./postman/bookstore-api.postman_collection.json)
+
+
+---
+
 ## 🚀 Features
 
 - 📖 CRUD operations for books

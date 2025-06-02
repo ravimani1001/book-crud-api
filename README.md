@@ -27,7 +27,7 @@ Use this base URL to test the following endpoints:
 
 You can download and import the Postman collection to easily test the API:
 
-[BookstoreAPI.postman_collection.json](./postman/bookstore-api.postman_collection.json)
+[BookstoreAPI.postman_collection.json](./postman/BookstoreAPI.postman_collection.json)
 
 
 ---
